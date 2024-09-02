@@ -1,0 +1,710 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Hey There, i’m SUHAIB PK</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(249, 228, 188, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="3f88e5c6-c397-4f77-aa12-b62fa77f5cda" class="page sans"><header><img class="page-cover-image" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/IMG_20240821_161744.jpg" style="object-position:center 59.86%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/1724221078944-removebg-preview.png"/></div><h1 class="page-title">Hey There, i’m SUHAIB PK</h1><p class="page-description"></p></header><div class="page-body"><div id="1f04eb7b-fbe9-47aa-a28b-71692f425ede" class="column-list"><div id="c23b8fc4-d3b5-42a5-9bb1-24a1d301a9b9" style="width:62.5%" class="column"><h2 id="ddb53e63-e26d-4f85-826e-90533e62f61b" class=""><mark class="highlight-brown">Creating prototypes with Precision and Passion</mark></h2><hr id="0c948c89-6a5c-4663-b21f-4f98b0cb137a"/><h3 id="72598fa7-5925-431d-b06a-322f5b1511cb" class="">Welcome to my portfolio! I’m SUHAIB PK</h3><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0666e7e1-417b-4a7f-afbb-d7a3c1442fb8"><div style="font-size:1.5em"><span class="icon">▶️</span></div><div style="width:100%"><mark class="highlight-brown"><strong><a href="https://www.notion.so/Hey-There-i-m-SUHAIB-PK-3f88e5c6c3974f77aa12b62fa77f5cda?pvs=21">Explore My Work</a></strong></mark></div></figure><hr id="04899598-0aa5-4a71-b122-29ee8bcce4ba"/><p id="4fcd07cd-9fbd-41c3-a172-b7117e20d089" class="">
+</p></div><div id="321e744e-7bbd-421f-be3d-ce8e736411e0" style="width:37.5%" class="column"><figure id="40cf9020-a499-47d8-a322-b09b07eea7eb" class="image"><a href="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/Firefly_A_hyper_realistic_scene_of_video_editors_setup_modern_neon_lights_80467.jpg"><img style="width:336px" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/Firefly_A_hyper_realistic_scene_of_video_editors_setup_modern_neon_lights_80467.jpg"/></a></figure><p id="fb4ae2a5-44cb-40ec-bf9d-0c9891835294" class="">
+</p></div></div><div id="1d88194b-561d-4dc9-9d3c-d10b9b620165" class="column-list"><div id="7ed2458c-4b63-4342-a439-a0d8b9b35b61" style="width:75%" class="column"><h2 id="e4be24e8-1076-44dd-9dfe-316e60d6d256" class=""><mark class="highlight-brown">About Me</mark></h2><p id="42113f4c-3f01-441d-aa11-a0115f4e6362" class="">
+</p><p id="4162cba5-f460-492e-9c0c-f7587e5591ee" class=""><strong>I am a machinist currently interning at Super FabLab Kochi, where I assist startups in bringing their prototype ideas to life. My role involves working with various machines and tools to create precise and functional prototypes, supporting innovation and product development. This experience allows me to apply my machining skills.</strong></p><p id="4aebb959-51b8-4125-aa7f-2517f4ff9947" class="">
+</p></div><div id="b3fa8a80-9fb8-4b5c-851d-7eda0a6e05aa" style="width:12.5%" class="column"><p id="661c3c57-bbb5-4de7-a09c-c74389034936" class="">
+</p><p id="3f1651d5-ea80-4a9b-be7e-70d8951b7601" class="">
+</p><p id="f6f26ffe-b747-4314-b186-4cd41cab74ed" class="">
+</p></div><div id="d05bbcbb-785b-4cd8-877f-2c4cf0077661" style="width:12.5%" class="column"><p id="3d92e4ab-d5d0-4cc2-93cf-5eb0adba7fb0" class="">
+</p><p id="82e8f06b-179b-4f5b-be7c-51b25a742adb" class="">
+</p><p id="1dc7aac6-3c82-4f51-98f2-0d4d7690f9b0" class="">
+</p></div></div><div id="a659b11a-e56b-45cb-adbe-78c145f1ba70" class="column-list"><div id="33a48195-dbac-459f-a51f-fc2acc9622ee" style="width:49.99999999999999%" class="column"><p id="403dc0ea-29f0-4b06-9e65-6f03a22a1c6e" class="">
+</p></div><div id="a1dc4abf-cc54-4825-8962-0b2a3c64b2f6" style="width:49.99999999999999%" class="column"><p id="1830d6e7-29d5-446b-b7b1-5d4ad88744c6" class="">
+</p></div></div><div id="78182909-3892-43fb-903c-e8f871ddd4ab" class="column-list"><div id="ca3a7dab-7ddc-4e1f-a8e6-082947ad7d3b" style="width:112.5%" class="column"><h2 id="d5c475be-dd85-4b59-8ebd-36f3f7101b66" class=""><mark class="highlight-brown">MY PROJECT</mark></h2></div><div id="0c1e5b5c-28c8-4676-87ba-b389f4fcf9f7" style="width:87.49999999999999%" class="column"><p id="a1d8c92f-93d1-4196-adea-90ec43a8f347" class="">
+</p></div></div><div id="c7390a92-fc3c-4950-90c1-9b2bb4d2b79f" class="column-list"><div id="b6b9ce11-aac0-4d1e-a172-20c118929272" style="width:25%" class="column"><figure id="fc5d6ac3-a4eb-4bc3-abda-01bee41a5fb5" class="link-to-page"><a href="https://www.notion.so/EYE-MECHANISM-fc5d6ac3a4eb4bc3abda01bee41a5fb5?pvs=21"><span class="icon">👁️</span>EYE MECHANISM</a></figure><figure id="06850482-b8f5-4999-91dc-c3760d6256db" class="image"><a href="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/Firefly_generate_a_modern_business_logo_with_graphic_design_space_text_80467.jpg"><img style="width:240px" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/Firefly_generate_a_modern_business_logo_with_graphic_design_space_text_80467.jpg"/></a></figure></div><div id="90068e44-9e14-428b-87c3-d187ad37e767" style="width:25%" class="column"><p id="d0ea7da1-181a-4d0f-9709-29c8a7f21f94" class="">
+</p></div><div id="13866276-95a3-483f-ad55-f249ab4b04dd" style="width:25.000000000000007%" class="column"><p id="8ad9546c-5b78-4d83-ae4d-b4f20abc78bc" class="">
+</p></div><div id="942b8479-8a0a-42c0-85ad-a53fbb4d551c" style="width:25.000000000000007%" class="column"><p id="3d3d942c-80f3-42fe-93e0-69c77d6b4533" class="">
+</p></div></div><p id="c45e7ad0-0999-456a-a2fe-ed591dd914b6" class="">
+</p><p id="8aff5200-f0c7-4b68-800d-a17c1f01bf6c" class="">
+</p><p id="31f68c9d-f934-4ab2-9577-11395f85d83f" class="">
+</p><p id="7d71dee7-3661-4f6d-be37-0c802dcb9403" class="">
+</p><figure id="e157996e-33f2-4fc9-9c8a-8ae9f254c532" class="image"><a href="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/Screenshot_2024-09-02_164619.png"><img style="width:336px" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/Screenshot_2024-09-02_164619.png"/></a></figure><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="9541046a-71e4-40ef-b2a7-4b4a258d1a7b"><div style="font-size:1.5em"><span class="icon">💡</span></div><div style="width:100%"><p id="2bd2b679-462b-4ed9-8c89-8a0f327830f2" class="">
+</p><figure id="10af425b-459c-4270-9d75-6e0df3865711" class="link-to-page"><a href="https://www.notion.so/Git-10af425b459c42709d756e0df3865711?pvs=21">Git</a></figure></div></figure><p id="6211a77c-34c4-4420-b86b-bb19c957c1fe" class="">
+</p><hr id="5329955e-afe5-4e88-80e4-ff46ff07e050"/><p id="f595a665-3221-4131-ab4d-1a91e673d65a" class="">
+</p><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="a70791b6-311c-4298-906b-564913460751"><div style="font-size:1.5em"><span class="icon">👏🏽</span></div><div style="width:100%"><mark class="highlight-default">“ The final product will exactly capture audience’s attention.”</mark></div></figure><p id="f5297766-0ce3-430e-80e6-cb34f2539845" class="">
+</p><p id="b619a4fc-31d4-46e6-8edd-b4aadc6b2c27" class="">
+</p><hr id="9c4a59c7-f175-48f7-924a-1c312fa45ee8"/><h2 id="da6286cf-5563-43d4-9142-c686b700d331" class=""><mark class="highlight-brown"><strong>Contact Information:</strong></mark></h2><p id="7c37fa70-940d-459f-acb9-58b99509a1b1" class="">Ready to collaborate on your next project? Get in touch with me!</p><div id="b5c996e3-b527-47f5-9346-0d66d2ea4b61" class="column-list"><div id="08429481-e0c4-4faa-a66c-49139a984dd3" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="2ae4ea24-1f29-4864-8ae5-9f12b3fa0602"><div style="font-size:1.5em"><span class="icon">✉️</span></div><div style="width:100%">suhaibpk9298@gmail.com</div></figure></div><div id="82a99bc7-6dee-4c5a-80fc-0d0954858581" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="fc9fc84a-80bb-41bb-8365-fe770bf3eec2"><div style="font-size:1.5em"><img class="icon" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/pngtree-whatsapp-icon-social-media-png-image_6618452.png"/></div><div style="width:100%"><a href="https://www.whatsapp.com/">9199999999</a></div></figure></div></div><div id="7f976c9d-d8a3-4b53-a819-c3a0e6e4a20d" class="column-list"><div id="bfe9bf23-d00c-4fb3-8111-ef7718232a7e" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="7f934a61-c1de-4441-bfcb-cdfe4466d7c9"><div style="font-size:1.5em"><img class="icon" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/LinkedIn_icon.svg.png"/></div><div style="width:100%">Linkedin</div></figure></div><div id="33f913a8-9c4b-4309-b800-9f391f77afb3" style="width:50%" class="column"><figure class="block-color-gray_background callout" style="white-space:pre-wrap;display:flex" id="0d656b63-6fb7-4c68-a3e4-3a17fa011952"><div style="font-size:1.5em"><img class="icon" src="Hey%20There,%20i%E2%80%99m%20SUHAIB%20PK%203f88e5c6c3974f77aa12b62fa77f5cda/954290_2227-removebg-preview.png"/></div><div style="width:100%">Suhaib_shazz</div></figure></div></div><p id="5b35af58-d1a2-4ceb-9d90-a7500c48245b" class="">
+</p><hr id="742c4a5f-ac52-4332-9a9c-b73d9602a49b"/><h2 id="90f61485-242f-493f-b9bc-de8a430fcd5a" class="">Additional Sections</h2><h3 id="07565ca1-62b1-4524-b3fd-b7289b94388c" class="">Blog/Insights</h3><p id="bf220586-22b8-4299-a9c5-0170ed9f4529" class=""><strong>Latest Posts:</strong></p><ul id="bae41ace-053e-4f38-b57e-980b37345167" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.notion.so/Hey-There-i-m-SUHAIB-PK-3f88e5c6c3974f77aa12b62fa77f5cda?pvs=21">Behind the Scenes of [Project Name]</a></li></ul><ul id="8caf32e1-aabe-4b07-8adc-0fa516974b49" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.notion.so/Hey-There-i-m-SUHAIB-PK-3f88e5c6c3974f77aa12b62fa77f5cda?pvs=21">Top 5 Tips for Effective Video Editing</a></li></ul><ul id="a7430aed-021e-4c7d-821d-264f6235f286" class="bulleted-list"><li style="list-style-type:disc"><a href="https://www.notion.so/Hey-There-i-m-SUHAIB-PK-3f88e5c6c3974f77aa12b62fa77f5cda?pvs=21">The Power of Storytelling in Video</a></li></ul><h3 id="600fe464-02e1-4390-9576-5a8d704858f7" class="">FAQ</h3><p id="abcb9eed-4a4a-4f0a-8418-416cec9abc1f" class=""><strong>Frequently Asked Questions:</strong></p><ul id="14b41eda-f555-499f-b6a9-1666041a7ae4" class="bulleted-list"><li style="list-style-type:disc"><strong>What is your turnaround time?</strong><br/>Typically, I aim to deliver projects within [X] weeks, depending on the complexity and scope.<br/></li></ul><ul id="c7601601-6865-40f9-b472-e967676495c2" class="bulleted-list"><li style="list-style-type:disc"><strong>What are your rates?</strong><br/>My rates vary based on the project. Contact me for a detailed quote.<br/></li></ul><ul id="e4c2359c-ac49-4016-b49c-1713177b0642" class="bulleted-list"><li style="list-style-type:disc"><strong>Do you offer revisions?</strong><br/>Yes, I offer [X] rounds of revisions to ensure the final product meets your expectations.<br/></li></ul><h3 id="d63d6aa9-4afb-4645-983d-8eb0f51bc813" class="">Video Reel</h3><p id="6001b242-57cb-4d8b-90e5-a2230b6c93a1" class="">Check out my highlight reel for a quick overview of my work. <a href="https://www.notion.so/Hey-There-i-m-SUHAIB-PK-3f88e5c6c3974f77aa12b62fa77f5cda?pvs=21">Watch the Reel</a></p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
